@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Sedona</title>
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <header class="main-header">
-            <div class="main-header__mobile-nav-wrap  main-header__mobile-nav-wrap--hidden">
+            <div class="main-header__mobile-nav-wrap  main-header__mobile-nav-wrap_show">
                 <nav class="mobile-nav">
                     <ul class="mobile-nav__list">
                         <li class="mobile-nav__item">
@@ -27,31 +28,37 @@
             </div>
             <div class="main-header__main-nav-wrap">
                 <nav class="main-nav">
-                    <ul class="main-nav__list  main-nav__list--hidden">
+                    <ul class="main-nav__list  main-nav__list_show">
                         <li>
                             <a class="main-nav__item" href="#">Информация</a>
+                        </li>
+                        <li>
                             <a class="main-nav__item" href="#">Фото и видео</a>
                         </li>
                         <li>
                             <a class="main-nav__item" href="#">Карта штата</a>
+                        </li>
+                        <li>
                             <a class="main-nav__item" href="#">Гостиницы</a>
                         </li>
                     </ul>
-                    <a class="main-nav__logo-sedona" href="#"></a>
-                    <a class="main-nav__button-open-mobile-nav  main-nav__button-open-mobile-nav--hidden"
+                    <a class="logo-sedona" href="#"></a>
+                    <a class="main-nav__open-mobile-nav-btn  main-nav__open-mobile-nav-btn_show"
                        href="#"></a>
                 </nav>
             </div>
             <div class="main-header__welcome-wrap">
                 <figure class="main-header__decor-elem-1">
                     <img src="assets/images/text-welcome.svg" alt="Welcome">
-                    <img src="assets/images/text-tothegorgeous.svg" alt="To the gorgeous">
+                    <img src="assets/images/text-tothegorgeous.svg"
+                         alt="To the gorgeous">
                 </figure>
                 <figure class="main-header__decor-elem-2">
                     <img src="assets/images/text-sedona.svg" alt="Sedona">
                 </figure>
                 <figure class="main-header__decor-elem-3">
-                    <img src="assets/images/text-becausecanyon.svg" alt="Because canyon">
+                    <img src="assets/images/text-becausecanyon.svg"
+                         alt="Because canyon">
                 </figure>
             </div>
         </header>
@@ -125,7 +132,7 @@
                 <div class="reasons-list__other-items-wrap">
                     <section class="reasons-list__item-wrap ">
                         <div class="reasons-list__text-block-wrap">
-                            <div class="reasons-list__text-block  reasons-list__text-block--bg_color_grey">
+                            <div class="reasons-list__text-block  reasons-list__text-block_bg_color_grey">
                                 <h2>Небольшая площадь</h2>
                                 <p>Все достопримечательности находятся очень
                                    близко</p>
@@ -134,7 +141,7 @@
                     </section>
                     <section class="reasons-list__item-wrap">
                         <div class="reasons-list__text-block-wrap">
-                            <div class="reasons-list__text-block  reasons-list__text-block--bg_color_grey">
+                            <div class="reasons-list__text-block  reasons-list__text-block_bg_color_grey">
                                 <h2>Красивая дорога</h2>
                                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                             </div>
@@ -142,7 +149,7 @@
                     </section>
                     <section class="main-container-reasons-item">
                         <div class="reasons-list__text-block-wrap">
-                            <div class="reasons-list__text-block  reasons-list__text-block--bg_color_grey">
+                            <div class="reasons-list__text-block  reasons-list__text-block_bg_color_grey">
                                 <h2>Мало туристов</h2>
                                 <p>Большинство едет в гранд каньон и толпится там</p>
                             </div>
@@ -169,7 +176,7 @@
                         <input id="adults" type="number" name="adults">
                         <label for="children">Дети:</label>
                         <input id="children" type="number" name="children">
-                        <button class="btn" type="submit">Найти</button>
+                        <button class="btn hotel-search__btn" type="submit">Найти</button>
                     </form>
                 </div>
             </section>
@@ -178,10 +185,11 @@
         <footer class="main-footer">
             <p class="main-footer__text">#visitsedona</p>
             <div class="main-footer__social-wrap">
-                <a class="btn  btn--social  btn--social_tw" href="#"></a>
-                <a class="btn  btn--social  btn--social_fb" href="#"></a>
-                <a class="btn  btn--social  btn--social_yt" href="#"></a>
+                <a class="btn  btn_social  btn_social_tw" href="#"></a>
+                <a class="btn  btn_social  btn_social_fb" href="#"></a>
+                <a class="btn  btn_social  btn_social_yt" href="#"></a>
             </div>
         </footer>
+        <script src="js/script.min.js"></script>
     </body>
 </html>
