@@ -1,23 +1,16 @@
-*, *:before, *:after {
-  box-sizing: inherit;
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: ~"calc((100% - 137px)/2)";
+  display: block;
+  width: 137px;
+  height: 70px;
+
+  background: url("/src/components/main-header/main-header__logo-sedona.png") no-repeat center center;
 }
 
-html {
-  box-sizing: border-box;
-  font-size: 10px;
-}
+.main-header__welcome-wrap {
+  min-height: 390px;
 
-body {
-  font-size: @font-size-base;
-  color: @gray;
-}
-
-a {
-  color: red;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
+  background-color: #113355;
 }
