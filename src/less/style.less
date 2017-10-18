@@ -1,2 +1,38 @@
-@import 'variables.less';
-@import '../components/main-header/main-header.less';
+@import 'variables';
+@import '../css/normalize.css';
+@import "../components/main-header/main-header";
+@import '../components/mobile-nav/mobile-nav';
+@import '../components/main-nav/main-nav';
+@import '../components/decor-footer-block/decor-footer-block';
+
+
+@import '../components/reasons-list/reasons-list';
+@import '../components/reasons-list/__item-wrap/reasons-list__item-wrap';
+@import '../components/reasons-list/__text-block-wrap/reasons-list__text-block-wrap';
+@import '../components/reasons-list/__image-wrap/reasons-list__image-wrap';
+@import '../components/features/features';
+@import '../components/features/__list/features__list';
+@import '../components/features/__item-wrap/features__item-wrap';
+@import '../components/reasons-list/__text-block-wrap_color_grey/reasons-list__text-block-wrap_color_grey';
+@import '../components/reasons-list/__other-items-wrap/reasons-list__other-items-wrap';
+@import '../components/main-container/__interest/main-container__interest';
+@import '../components/hotel-search/hotel-search';
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 260px;
+
+  color: @black;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  text-transform: uppercase;
+}
