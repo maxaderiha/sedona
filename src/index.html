@@ -2,64 +2,66 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
+        <meta name="theme-color" content="#477d9e">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sedona</title>
         <link rel="stylesheet" href="css/style.min.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
+              rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
-            <div class="main-header__mobile-nav-wrap  main-header__mobile-nav-wrap_show">
-                <nav class="mobile-nav">
-                    <ul class="mobile-nav__list">
-                        <li class="mobile-nav__item">
-                            <a href="#">Карта сайта</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a href="#">Информация</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a href="#">Фото и видео</a>
-                        </li>
-                        <li class="mobile-nav__item">
-                            <a href="#">Гостиницы</a>
-                        </li>
-                    </ul>
-                    <a class="mobile-nav__button-close" href="#"></a>
-                </nav>
-            </div>
-            <div class="main-header__main-nav-wrap">
-                <nav class="main-nav">
-                    <ul class="main-nav__list  main-nav__list_show">
-                        <li>
-                            <a class="main-nav__item" href="#">Информация</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__item" href="#">Фото и видео</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__item" href="#">Карта штата</a>
-                        </li>
-                        <li>
-                            <a class="main-nav__item" href="#">Гостиницы</a>
-                        </li>
-                    </ul>
-                    <a class="logo-sedona" href="#"></a>
-                    <a class="main-nav__open-mobile-nav-btn  main-nav__open-mobile-nav-btn_show"
-                       href="#"></a>
-                </nav>
-            </div>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                        <a href="#">Карта сайта</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#">Информация</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+                <a class="mobile-nav__btn-close" href="#"></a>
+            </nav>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#">Информация</a>
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Карта штата</a>
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+                <a class="main-header__logo" href="#"></a>
+                <a class="main-nav__open-mobile-nav-btn  main-nav__open-mobile-nav-btn_displayed"
+                   href="#"></a>
+            </nav>
             <div class="main-header__welcome-wrap">
-                <figure class="main-header__decor-elem-1">
-                    <img src="assets/images/text-welcome.svg" alt="Welcome">
-                    <img src="assets/images/text-tothegorgeous.svg"
+                <figure class="main-header__title-1">
+                    <img src="components/main-header/main-header__images/text-welcome.svg" alt="Welcome">
+                    <img src="components/main-header/main-header__images/text-tothegorgeous.svg"
                          alt="To the gorgeous">
                 </figure>
-                <figure class="main-header__decor-elem-2">
-                    <img src="assets/images/text-sedona.svg" alt="Sedona">
+                <figure class="main-header__title-2">
+                    <img src="components/main-header/main-header__images/text-sedona.svg" alt="Sedona">
                 </figure>
-                <figure class="main-header__decor-elem-3">
-                    <img src="assets/images/text-becausecanyon.svg"
+                <figure class="main-header__title-3">
+                    <img src="components/main-header/main-header__images/text-becausecanyon.svg"
                          alt="Because canyon">
                 </figure>
+                <div class="decor-footer-block">
+                    <svg>
+                        <path d="M 0 0 L 0 60 L 1200 60 L 1200 0 L 940 30 L 940 0 L 600 60 L 260 0 L 260 30 z"/>
+                    </svg>
+                </div>
+
             </div>
         </header>
         <main class="main-container">
@@ -79,15 +81,15 @@
                         </div>
                     </div>
                     <div class="reasons-list__image-wrap">
-                        <figure class="reasons-list__image">
-                            <img src="assets/images/photo-city@1x.jpg"
-                                 alt="City"
-                                 width="800"
-                                 height="400">
-                        </figure>
+                        <!--<figure class="reasons-list__image">-->
+                        <!--<img src="assets/images/photo-city@1x.jpg"-->
+                        <!--alt="City"-->
+                        <!--width="800"-->
+                        <!--height="400">-->
+                        <!--</figure>-->
                     </div>
                 </section>
-                <div class="features">
+                <section class="features">
                     <ul class="features__list">
                         <li class="features__item-wrap">
                             <div class="features__item">
@@ -111,7 +113,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </section>
                 <section class="reasons-list__item-wrap">
                     <div class="reasons-list__text-block-wrap">
                         <div class="reasons-list__text-block">
@@ -121,17 +123,17 @@
                         </div>
                     </div>
                     <div class="reasons-list__image-wrap">
-                        <figure class="reasons-list__image">
-                            <img src="assets/images/photo-bridge@1x.jpg"
-                                 alt="Bridge"
-                                 width="800"
-                                 height="400">
-                        </figure>
+                        <!--<figure class="reasons-list__image">-->
+                        <!--<img src="assets/images/photo-bridge@1x.jpg"-->
+                        <!--alt="Bridge"-->
+                        <!--width="800"-->
+                        <!--height="400">-->
+                        <!--</figure>-->
                     </div>
                 </section>
                 <div class="reasons-list__other-items-wrap">
                     <section class="reasons-list__item-wrap ">
-                        <div class="reasons-list__text-block-wrap">
+                        <div class="reasons-list__text-block-wrap reasons-list__text-block-wrap_color_grey">
                             <div class="reasons-list__text-block  reasons-list__text-block_bg_color_grey">
                                 <h2>Небольшая площадь</h2>
                                 <p>Все достопримечательности находятся очень
@@ -140,15 +142,15 @@
                         </div>
                     </section>
                     <section class="reasons-list__item-wrap">
-                        <div class="reasons-list__text-block-wrap">
+                        <div class="reasons-list__text-block-wrap  reasons-list__text-block-wrap_color_grey">
                             <div class="reasons-list__text-block  reasons-list__text-block_bg_color_grey">
                                 <h2>Красивая дорога</h2>
                                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                             </div>
                         </div>
                     </section>
-                    <section class="main-container-reasons-item">
-                        <div class="reasons-list__text-block-wrap">
+                    <section class="reasons-list__item-wrap">
+                        <div class="reasons-list__text-block-wrap reasons-list__text-block-wrap_color_grey">
                             <div class="reasons-list__text-block  reasons-list__text-block_bg_color_grey">
                                 <h2>Мало туристов</h2>
                                 <p>Большинство едет в гранд каньон и толпится там</p>
@@ -157,26 +159,33 @@
                     </section>
                 </div>
             </article>
-            <section class="main-container__interest">
+            <aside class="main-container__interest">
                 <div class="main-container__interest-wrap">
                     <h2>Заинересовались?</h2>
                     <p>Укажите предпологаемые даты поездки и мы покажем вам лучшие
                        предложения гостиниц в Седоне</p>
                 </div>
-            </section>
+            </aside>
             <section class="hotel-search">
                 <div class="hotel-search__wrap">
                     <h2 class="hotel-search__title">Поиск гостиницы в Седоне</h2>
                     <form>
                         <label for="arrival-date">Дата заезда:</label>
-                        <input id="arrival-date" type="date" name="arrival-date">
+                        <input id="arrival-date"
+                               type="date"
+                               name="arrival-date"
+                               required>
                         <label for="departure-date">Дата выезда:</label>
-                        <input id="departure-date" type="date" name="departure-date">
+                        <input id="departure-date"
+                               type="date"
+                               name="departure-date"
+                               required>
                         <label for="adults">Взрослые:</label>
-                        <input id="adults" type="number" name="adults">
+                        <input id="adults" type="number" name="adults" required>
                         <label for="children">Дети:</label>
-                        <input id="children" type="number" name="children">
-                        <button class="btn hotel-search__btn" type="submit">Найти</button>
+                        <input id="children" type="number" name="children" required>
+                        <button class="btn hotel-search__btn" type="submit">Найти
+                        </button>
                     </form>
                 </div>
             </section>

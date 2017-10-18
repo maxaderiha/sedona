@@ -1,16 +1,66 @@
 .main-header__logo {
   position: absolute;
+  z-index: 10;
   top: 0;
   left: ~"calc((100% - 137px)/2)";
   display: block;
   width: 137px;
   height: 70px;
 
-  background: url("/src/components/main-header/main-header__logo-sedona.png") no-repeat center center;
+  background: url("/src/components/main-header/main-header__images/main-header__logo-sedona.png") no-repeat center center;
 }
 
 .main-header__welcome-wrap {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 45px;
+  padding-bottom: 55px;
   min-height: 390px;
 
-  background-color: #113355;
+  overflow: hidden;
+
+  background: #e5f2fa url("/src/components/main-header/main-header__images/main-header__photo-background@1x.jpg") no-repeat center -100px;
+
+  .main-header__title-1 {
+    .reset-figure-style-mix-in;
+
+    img:first-child {
+      width: 145px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    img:last-child {
+      width: 196px;
+    }
+  }
+
+  .main-header__title-2 {
+    .reset-figure-style-mix-in;
+
+    img {
+      width: 283px;
+    }
+  }
+
+  .main-header__title-3 {
+    .reset-figure-style-mix-in;
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.reset-figure-style-mix-in() {
+  margin: 0;
+
+  img {
+    display: block;
+  }
 }
