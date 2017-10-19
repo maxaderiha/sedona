@@ -1,16 +1,15 @@
 @import "../../less/variables";
+@import "../../less/mixins";
+
 
 .decor-footer-block {
   position: absolute;
   left: ~"calc((100% - 1200px) / 2)";
   bottom: 0;
-
   height: 60px;
+  .svg-mix-in();
 
-  svg {
-    height: 60px;
-    width: 1200px;
-
-    fill: @white;
+  &_color_blue {
+    .svg-mix-in(@blue);
   }
 }

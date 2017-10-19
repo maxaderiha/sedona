@@ -1,32 +1,33 @@
-@import '../../less/variables';
+@import "../../less/variables";
+
+
 
 .mobile-nav {
   position: relative;
-
   text-align: center;
 }
+
+
 
 .mobile-nav__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
+
+
 
 .mobile-nav__item {
 
   a {
     display: block;
-
     padding: 9px 0;
     min-height: 56px;
-
     color: @white;
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 40px;
     text-decoration: none;
-
     border-bottom: 1px solid @dark-blue;
     border-top: 1px solid @lite-blue;
     background-color: @blue;
@@ -38,7 +39,7 @@
 
   &:last-child a {
     border-bottom: none;
-    box-shadow: 1px -5px 25px -11px #000 inset;
+    box-shadow: 1px -5px 25px -11px #000000 inset;
   }
 
   &:hover a {
@@ -56,14 +57,14 @@
 
 }
 
+
+
 .mobile-nav__btn-close {
   position: absolute;
   right: 20px;
   top: 15px;
-
   display: block;
   height: 26px;
   width: 26px;
-
   background: url("/src/components/mobile-nav/mobile_nav__menu-close.svg") no-repeat center center;
 }

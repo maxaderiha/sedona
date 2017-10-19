@@ -1,3 +1,7 @@
+@import '../../less/mixins';
+
+
+
 .main-header__logo {
   position: absolute;
   z-index: 10;
@@ -6,24 +10,21 @@
   display: block;
   width: 137px;
   height: 70px;
-
   background: url("/src/components/main-header/main-header__images/main-header__logo-sedona.png") no-repeat center center;
 }
 
+
+
 .main-header__welcome-wrap {
   position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   padding-top: 45px;
   padding-bottom: 55px;
   min-height: 390px;
-
   overflow: hidden;
-
   background: #e5f2fa url("/src/components/main-header/main-header__images/main-header__photo-background@1x.jpg") no-repeat center -100px;
 
   .main-header__title-1 {
@@ -54,13 +55,5 @@
     img {
       width: 200px;
     }
-  }
-}
-
-.reset-figure-style-mix-in() {
-  margin: 0;
-
-  img {
-    display: block;
   }
 }
