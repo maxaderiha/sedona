@@ -1,0 +1,50 @@
+@import "../../../less/variables";
+
+
+
+.reasons-list__item {
+
+  .reasons-list__text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 195px;
+    padding: 40px 30px;
+    color: @white;
+    text-align: center;
+    background-color: @blue;
+
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .reasons-list__number {
+      position: relative;
+      min-width: 50px;
+
+      span {
+        position: relative;
+        padding: 0 5px;
+        font-size: @font-size-s;
+        line-height: @line-height-s;
+        background-color: @blue;
+      }
+
+      &::before {
+        position: absolute;
+        top: 10px;
+        left: -2px;
+        right: 0;
+        height: 1px;
+        background-color: @white;
+        content: "";
+      }
+
+    }
+  }
+}

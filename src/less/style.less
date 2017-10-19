@@ -1,22 +1,22 @@
-@import 'variables';
-@import '../css/normalize.css';
-@import "../components/main-header/main-header";
-@import '../components/mobile-nav/mobile-nav';
-@import '../components/main-nav/main-nav';
-@import '../components/decor-footer-block/decor-footer-block';
+@import "variables";
+@import "mixins";
+@import "../css/normalize.css";
+@import "@{url}main-header/main-header";
+@import "@{url}mobile-nav/mobile-nav";
+@import "@{url}main-nav/main-nav";
+@import "@{url}decor-footer-block/decor-footer-block";
+@import "@{url}reasons-list/reasons-list";
+@import "@{url}reasons-list/__item/reasons-list__item";
 
 
-@import '../components/reasons-list/reasons-list';
-@import '../components/reasons-list/__item-wrap/reasons-list__item-wrap';
-@import '../components/reasons-list/__text-block-wrap/reasons-list__text-block-wrap';
-@import '../components/reasons-list/__image-wrap/reasons-list__image-wrap';
-@import '../components/features/features';
-@import '../components/features/__list/features__list';
-@import '../components/features/__item-wrap/features__item-wrap';
-@import '../components/reasons-list/__text-block-wrap_color_grey/reasons-list__text-block-wrap_color_grey';
-@import '../components/reasons-list/__other-items-wrap/reasons-list__other-items-wrap';
-@import '../components/main-container/__interest/main-container__interest';
-@import '../components/hotel-search/hotel-search';
+@import "@{url}reasons-list/__text-block-wrap/reasons-list__text-block-wrap";
+@import "@{url}reasons-list/__image-wrap/reasons-list__image-wrap";
+@import "@{url}features/features";
+@import "@{url}features/__list/features__list";
+@import "@{url}features/__item-wrap/features__item-wrap";
+@import "@{url}reasons-list/__text-block-wrap_color_grey/reasons-list__text-block-wrap_color_grey";
+@import "@{url}reasons-list/__other-items-wrap/reasons-list__other-items-wrap";
+@import "@{url}hotel-search/hotel-search";
 
 
 *, *:before, *:after {
@@ -33,6 +33,6 @@ body {
   min-width: 260px;
 
   color: @black;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
