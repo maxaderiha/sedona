@@ -1,0 +1,60 @@
+@import "../../less/variables";
+
+
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  min-height: 420px;
+
+  .features-list__item {
+    position: relative;
+    padding-left: 55px;
+    width: 82%;
+
+    b {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: @font-size-m;
+      line-height: @line-height-l;
+    }
+
+    p {
+      margin: 0;
+      font-size: @font-size-s;
+      line-height: @line-height-s;
+    }
+
+  }
+
+  .features-list__item_icon_house {
+    .features-item-icon("/src/components/features-list/features-list__images/house.svg");
+  }
+
+  .features-list__item_icon_gift {
+    .features-item-icon("/src/components/features-list/features-list__images/gift.svg");
+  }
+
+  .features-list__item_icon_burger {
+    .features-item-icon("/src/components/features-list/features-list__images/burger.svg");
+  }
+
+}
+
+
+
+.features-item-icon(@url) {
+  &::before {
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url(@url) no-repeat center center;
+    background-size: 40px 40px;
+    content: "";
+  }
+}
