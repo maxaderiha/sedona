@@ -1,0 +1,59 @@
+@import "../../less/variables";
+
+
+
+.input-number {
+  position: relative;
+
+  input[type="number"] {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: @font-size-s;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: @lite-gray;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+
+
+.input-number__inner-btn {
+  .input-number-btn("/src/components/input-number/icon-plus.svg", @right: 10px);
+}
+
+
+
+.input-number__outer-btn {
+  .input-number-btn("/src/components/input-number/icon-minus.svg", @left: 10px);
+}
+
+
+
+.input-number-btn(@url, @left: auto, @right: auto) {
+  position: absolute;
+  z-index: 10;
+  top: 12px;
+  left: @left;
+  right: @right;
+  width: 16px;
+  height: 16px;
+  border: none;
+  outline: none;
+  background: url(@url) no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+
+
