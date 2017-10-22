@@ -1,5 +1,69 @@
-.hotel-search {
-  min-height: 520px;
+@import "../../less/variables";
 
-  background-color: #8f7752;
+
+
+.hotel-search__form-wrap {
+  min-height: 520px;
+  background-color: @white;
 }
+
+
+
+.hotel-search__title {
+  display: flex;
+  min-height: 85px;
+  color: @white;
+  background-color: @brown;
+
+  h2 {
+    margin: auto;
+    font-size: @font-size-m;
+    line-height: @line-height-l;
+  }
+}
+
+
+
+.hotel-search__form {
+  padding: 25px 20px;
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 0;
+
+  .full-width {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .half-width {
+    display: inline-block;
+    width: 40%;
+
+    &:first-of-type {
+      margin-right: 20%;
+    }
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: @font-size-s;
+  }
+
+  input[type="date"] {
+    margin-bottom: 25px;
+  }
+
+  .hotel-search__btn {
+    width: 100%;
+    margin: 45px 0;
+  }
+}
+
+
+
+
+
+
+
