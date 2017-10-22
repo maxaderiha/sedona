@@ -1,0 +1,41 @@
+@import "../../less/variables";
+
+
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 590px;
+  background: url("/src/components/main-footer/main-footer__images/bg-map.jpg") no-repeat center center;
+  background-size: auto 590px;
+  box-shadow: 0 12px 15px -10px rgba(0, 0, 0, 0.15) inset;
+}
+
+
+
+.main-footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 160px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  p {
+    margin: 0;
+    font-size: @font-size-l;
+    font-weight: bold;
+    line-height: @line-height-l;
+  }
+}
+
+
+
+.main-footer__social-wrap {
+  font-size: 0;
+
+  .btn:not(:last-child) {
+    margin-right: 7px;
+  }
+}
