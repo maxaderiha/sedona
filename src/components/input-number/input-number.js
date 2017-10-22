@@ -18,12 +18,16 @@ function InputNumberModel(elem) {
     elem.addEventListener('click', (event) => {
         let target = event.target;
         let action = target.getAttribute('data-action');
-        let className = target.getAttribute('class').split("   ")[1];
-        console.log(target.getAttribute('class'));
+        let className;
+        if (target.getAttribute('class')) {
+            className = target.getAttribute('class').split('   ')[1];
+        } else {
+            return;
+        }
         if (action && className) {
             self[action](className);
         }
     });
 }
 
-new InputNumberModel(document.querySelector('.hotel-search__form'));
+new InputNumberModel(document.querySelector('.js-inputs-number'));
