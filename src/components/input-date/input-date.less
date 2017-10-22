@@ -1,0 +1,46 @@
+@import "../../less/variables";
+
+
+
+input[type="date"] {
+  position: relative;
+  display: inline-block;
+  padding: 11px 0;
+  padding-left: 15px;
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  font-size: @font-size-s;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: @lite-gray;
+
+  &::before {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    width: 40px;
+    height: 40px;
+    background:@lite-gray url("/src/components/input-date/icon-calendar.svg") no-repeat center center;
+    background-size: 22px 22px;
+    opacity: 0.3;
+    content: "";
+  }
+}
+
+
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 5px;
+  width: 22px;
+  height: 22px;
+  opacity: 0;
+}
