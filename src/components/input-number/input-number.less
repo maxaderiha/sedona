@@ -30,13 +30,13 @@
 
 
 .input-number__inner-btn {
-  .input-number-btn("/src/components/input-number/icon-plus.svg", @right: 0);
+  .input-number-btn("/src/components/input-number/input-number__images/icon-plus.svg", @right: 0);
 }
 
 
 
 .input-number__outer-btn {
-  .input-number-btn("/src/components/input-number/icon-minus.svg", @left: 0);
+  .input-number-btn("/src/components/input-number/input-number__images/icon-minus.svg", @left: 0);
 }
 
 
@@ -53,8 +53,7 @@
   border: none;
   outline: none;
   background: @lite-gray url(@url) no-repeat center center;
-  background-size: 16px 16px;
-  user-select: none;
+  background-size: 16px auto;
   cursor: pointer;
   opacity: 0.3;
 }

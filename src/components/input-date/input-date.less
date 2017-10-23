@@ -23,8 +23,9 @@ input[type="date"] {
     width: 40px;
     height: 40px;
     background:@lite-gray url("/src/components/input-date/icon-calendar.svg") no-repeat center center;
-    background-size: 22px 22px;
+    background-size: 22px auto;
     opacity: 0.3;
+    cursor: pointer;
     content: "";
   }
 }
@@ -42,5 +43,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   right: 5px;
   width: 22px;
   height: 22px;
+  cursor: pointer;
   opacity: 0;
 }
