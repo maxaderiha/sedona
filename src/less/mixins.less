@@ -31,3 +31,19 @@
     margin: 0;
   }
 }
+
+
+
+.hidden-block-mix-in() {
+  @media (min-width: 640px) {
+    display: none;
+  }
+}
+
+
+
+.show-block-mix-in(@display: block) {
+  @media (min-width: 640px) {
+    display: @display;
+  }
+}

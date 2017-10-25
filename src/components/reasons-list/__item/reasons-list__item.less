@@ -4,6 +4,12 @@
 
 
 .reasons-list__item {
+  @media (min-width: 640px) {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 213px;
+    flex-grow: 1;
+  }
 
   &_border_bottom {
     .reasons-list__text-wrap {
@@ -15,6 +21,10 @@
         height: 1px;
         background-color: @dark-gray;
         content: "";
+
+        @media (min-width: 640px) {
+          display: none;
+        }
       }
     }
   }
@@ -42,6 +52,14 @@
 
 
 
+.reasons-list__item_reverse {
+  @media (min-width: 640px) {
+    flex-direction: row-reverse;
+  }
+}
+
+
+
 .reasons-list__text-wrap {
   display: flex;
   flex-direction: column;
@@ -53,6 +71,13 @@
   text-align: center;
   background-color: @blue;
   .reset-text-margins;
+
+  @media (min-width: 640px) {
+    flex-basis: 213px;
+    flex-grow: 1;
+    height: 256px;
+    padding: 40px 5%;
+  }
 
   .reasons-list__number {
     position: relative;
