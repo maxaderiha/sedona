@@ -29,6 +29,12 @@
   overflow: hidden;
   background: #e5f2fa url("/src/components/main-header/main-header__images/photo-background.jpg") no-repeat center -100px;
 
+  @media (min-width: 640px) {
+    padding-top: 75px;
+    padding-bottom: 85px;
+    min-height: 515px;
+  }
+
   .main-header__title-1 {
     .reset-figure-style-mix-in;
 
@@ -36,10 +42,16 @@
       width: 145px;
       margin: 0 auto;
       margin-bottom: 10px;
+
+      @media (min-width: 640px) {
+        width: 190px;
+        margin-bottom: 15px;
+      }
     }
 
     img:last-child {
       width: 196px;
+      .img-width-mix-in(255px);
     }
   }
 
@@ -48,6 +60,7 @@
 
     img {
       width: 283px;
+      .img-width-mix-in(455px);
     }
   }
 
@@ -56,6 +69,15 @@
 
     img {
       width: 200px;
+      .img-width-mix-in(295px);
     }
+  }
+}
+
+
+
+.img-width-mix-in(@width) {
+  @media (min-width: 640px) {
+    width: @width;
   }
 }

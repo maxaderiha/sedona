@@ -14,6 +14,7 @@
 @import "@{url}input-number/input-number";
 @import "@{url}btn/btn";
 @import "@{url}main-footer/main-footer";
+@import "@{url}shadow-block/shadow-block";
 
 
 
@@ -27,11 +28,18 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  min-width: 260px;
-  max-width: 1200px;
-
   color: @black;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+}
+
+.main-wrap {
+  display: flex;
+  justify-content: center;
+  background-color: @lite-gray;
+}
+
+.base-width {
+  min-width: 260px;
+  max-width: 1200px;
 }
