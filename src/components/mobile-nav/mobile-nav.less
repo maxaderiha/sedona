@@ -2,11 +2,30 @@
 @import "../../less/mixins";
 
 
+
 .mobile-nav {
   position: relative;
   text-align: center;
-
+  display: none;
   .hidden-block-mix-in;
+}
+
+
+
+.mobile-nav-animation {
+  animation: stretch .6s;
+}
+
+
+
+@keyframes stretch {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 
@@ -68,5 +87,5 @@
   display: block;
   height: 26px;
   width: 26px;
-  background: url("../components/mobile-nav/mobile_nav__menu-close.svg") no-repeat center center;
+  background: url("../assets/images/cross.svg") no-repeat center center;
 }
