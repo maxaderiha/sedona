@@ -15,6 +15,8 @@
 @import "@{url}btn/btn";
 @import "@{url}main-footer/main-footer";
 @import "@{url}shadow-block/shadow-block";
+@import "@{url}interactive-map/interactive-map";
+@import "@{url}overlay/overlay";
 
 
 
@@ -22,10 +24,15 @@
   box-sizing: inherit;
 }
 
+
+
 html {
+  overflow: scroll;
   font-size: 14px;
   box-sizing: border-box;
 }
+
+
 
 body {
   color: @black;
@@ -33,13 +40,35 @@ body {
   text-transform: uppercase;
 }
 
+
+
 .main-wrap {
   display: flex;
   justify-content: center;
   background-color: @lite-gray;
 }
 
+
+
 .base-width {
   min-width: 260px;
   max-width: 1200px;
+}
+
+
+
+.show {
+  display: block;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+
+.scroll-disables {
+  overflow: hidden;
 }
