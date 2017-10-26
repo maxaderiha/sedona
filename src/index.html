@@ -11,261 +11,281 @@
     </head>
     <body>
         <div class="main-wrap">
-                <div class="shadow-block">
-                    <header class="main-header base-width">
-                        <nav class="mobile-nav">
-                            <ul class="mobile-nav__list">
-                                <li class="mobile-nav__item">
-                                    <a href="#">Карта штата</a>
-                                </li>
-                                <li class="mobile-nav__item">
-                                    <a href="#">Информация</a>
-                                </li>
-                                <li class="mobile-nav__item">
-                                    <a href="#">Фото и видео</a>
-                                </li>
-                                <li class="mobile-nav__item">
-                                    <a href="#">Гостиницы</a>
-                                </li>
-                            </ul>
-                            <a class="mobile-nav__btn-close" href="#"></a>
-                        </nav>
-                        <nav class="main-nav">
-                            <ul class="main-nav__list">
-                                <li class="main-nav__item">
-                                    <a href="#">Информация</a>
-                                    <a href="#">Фото и видео</a>
-                                </li>
-                                <li class="main-nav__item">
-                                    <a href="#">Карта штата</a>
-                                    <a href="#">Гостиницы</a>
-                                </li>
-                            </ul>
-                            <a class="main-header__logo" href="#"></a>
-                            <a class="main-nav__open-mobile-nav-btn"
-                               href="#"></a>
-                        </nav>
-                        <div class="main-header__welcome-wrap">
-                            <figure class="main-header__title-1">
-                                <img src="components/main-header/main-header__images/text-welcome.svg"
-                                     alt="Welcome">
-                                <img src="components/main-header/main-header__images/text-tothegorgeous.svg"
-                                     alt="To the gorgeous">
-                            </figure>
-                            <figure class="main-header__title-2">
-                                <img src="components/main-header/main-header__images/text-sedona.svg"
-                                     alt="Sedona">
-                            </figure>
-                            <figure class="main-header__title-3">
-                                <img src="components/main-header/main-header__images/text-becausecanyon.svg"
-                                     alt="Because the grand canyon sucks">
-                            </figure>
-                            <div class="decor-footer-block">
-                                <svg>
-                                    <path d="M 0 0 L 0 60 L 1200 60 L 1200 0 L 940 30 L 940 0 L 600 60 L 260 0 L 260 30 z"/>
-                                </svg>
-                            </div>
+            <div class="shadow-block">
+                <header class="main-header base-width">
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav__list">
+                            <li class="mobile-nav__item">
+                                <a href="#"
+                                   class="js-open-map-mobile"
+                                   data-action="open">Карта штата</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#">Информация</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#">Фото и видео</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="#">Гостиницы</a>
+                            </li>
+                        </ul>
+                        <a class="mobile-nav__btn-close js-mobile-nav-close-btn"
+                           href="#"
+                           data-action="close"></a>
+                    </nav>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a href="#">Информация</a>
+                                <a href="#">Фото и видео</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#"
+                                   class="js-open-map-tablet"
+                                   data-action="open">Карта
+                                                      штата</a>
+                                <a href="#">Гостиницы</a>
+                            </li>
+                        </ul>
+                        <a class="main-header__logo" href="#"></a>
+                        <a class="main-nav__open-mobile-nav-btn js-mobile-nav-open-btn"
+                           href="#" data-action="open"></a>
+                    </nav>
+                    <div class="main-header__welcome-wrap">
+                        <figure class="main-header__title-1">
+                            <img src="components/main-header/main-header__images/text-welcome.svg"
+                                 alt="Welcome">
+                            <img src="components/main-header/main-header__images/text-tothegorgeous.svg"
+                                 alt="To the gorgeous">
+                        </figure>
+                        <figure class="main-header__title-2">
+                            <img src="components/main-header/main-header__images/text-sedona.svg"
+                                 alt="Sedona">
+                        </figure>
+                        <figure class="main-header__title-3">
+                            <img src="components/main-header/main-header__images/text-becausecanyon.svg"
+                                 alt="Because the grand canyon sucks">
+                        </figure>
+                        <div class="decor-footer-block">
+                            <svg>
+                                <path d="M 0 0 L 0 60 L 1200 60 L 1200 0 L 940 30 L 940 0 L 600 60 L 260 0 L 260 30 z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </header>
+                <article class="reasons-list base-width">
+                    <header class="reasons-list__header">
+                        <div class="reasons-list__header-text-wrap">
+                            <h2>Седона — небольшой городок в Аризоне,
+                                заслуживающий
+                                большего!</h2>
+                            <p>Рассьотрим 5 причин, по которым
+                               седона
+                               лучше чем гранд каньон!</p>
+                        </div>
+                        <div class="decor-footer-block   decor-footer-block_color_blue">
+                            <svg>
+                                <path d="M 0 0 L 0 60 L 1200 60 L 1200 0 L 940 30 L 940 0 L 600 60 L 260 0 L 260 30 z"/>
+                            </svg>
                         </div>
                     </header>
-                    <article class="reasons-list base-width">
-                        <header class="reasons-list__header">
-                            <div class="reasons-list__header-text-wrap">
-                                <h2>Седона — небольшой городок в Аризоне,
-                                    заслуживающий
-                                    большего!</h2>
-                                <p>Рассьотрим 5 причин, по которым
-                                   седона
-                                   лучше чем гранд каньон!</p>
+                    <section class="reasons-list__item">
+                        <div class="reasons-list__text-wrap">
+                            <h2>Настоящий городок</h2>
+                            <div class="reasons-list__number">
+                                <span>№1</span>
                             </div>
-                            <div class="decor-footer-block   decor-footer-block_color_blue">
-                                <svg>
-                                    <path d="M 0 0 L 0 60 L 1200 60 L 1200 0 L 940 30 L 940 0 L 600 60 L 260 0 L 260 30 z"/>
-                                </svg>
-                            </div>
-                        </header>
-                        <section class="reasons-list__item">
-                            <div class="reasons-list__text-wrap">
-                                <h2>Настоящий городок</h2>
-                                <div class="reasons-list__number">
-                                    <span>№1</span>
-                                </div>
-                                <p>Седона не атракцион для туристов, там течет своя
-                                   жизнь</p>
-                            </div>
-                            <div class="reasons-list__image-wrap">
-                                <picture>
-                                    <source media="(min-width: 960px)"
-                                            srcset="assets/images/photo-city-desktop@1x.jpg 1x,
-                                        assets/images/photo-city-desktop@2x.jpg 2x">
-                                    <source media="(min-width: 640px)"
-                                            srcset="assets/images/photo-city-tablet@1x.jpg 1x,
-                                        assets/images/photo-city-tablet@2x.jpg 2x">
-                                    <img src="assets/images/photo-city-mobile@1x.jpg"
-                                         srcset="assets/images/photo-city-mobile@1x.jpg 1x,
-                                     assets/images/photo-city-mobile@2x.jpg 2x"
-                                         alt="City">
-                                </picture>
-                            </div>
-                        </section>
-                        <section class="features-list">
-                            <div class="features-list__item">
-                                <span class="features-list__icon_house"></span>
-                                <b>Жилье</b>
-                                <p>Рекомендуем пожить в настоящем мотеле, все как в
-                                   кино!</p>
-                            </div>
-                            <div class="features-list__item">
-                                <span class="features-list__icon_gift"></span>
-                                <b>Сувениры</b>
-                                <p>Не только китайского, но и местного
-                                   производства!</p>
-                            </div>
-                            <div class="features-list__item">
-                                <span class="features-list__icon_burger"></span>
-                                <b>Еда</b>
-                                <p>Всегда заказвайте фирменный бургер, вы не
-                                   разочаруетесь!</p>
-                            </div>
-                        </section>
-                        <section class="reasons-list__item reasons-list__item_reverse">
-                            <div class="reasons-list__text-wrap">
-                                <h2>Там есть мост дьявола</h2>
-                                <div class="reasons-list__number">
-                                    <span>№2</span>
-                                </div>
-                                <p>Да, по нему можно пройти! Если конечно вы
-                                   осмелитесь</p>
-                            </div>
-                            <div class="reasons-list__image-wrap">
-                                <picture>
-                                    <source media="(min-width: 960px)"
-                                            srcset="assets/images/photo-bridge-desktop@1x.jpg 1x,
-                                        assets/images/photo-bridge-desktop@2x.jpg 2x">
-                                    <source media="(min-width: 640px)"
-                                            srcset="assets/images/photo-bridge-tablet@1x.jpg 1x,
-                                        assets/images/photo-bridge-tablet@2x.jpg 2x">
-                                    <img src="assets/images/photo-bridge-mobile@1x.jpg"
-                                         srcset="assets/images/photo-bridge-mobile@1x.jpg 1x,
-                                     assets/images/photo-bridge-mobile@2x.jpg 2x"
-                                         alt="Bridge">
-                                </picture>
-                            </div>
-                        </section>
-                        <div class="reasons-list__other-items-wrap">
-                            <section class="reasons-list__item   reasons-list__item_theme_grey   reasons-list__item_border_bottom">
-                                <div class="reasons-list__text-wrap">
-                                    <h2>Небольшая площадь</h2>
-                                    <div class="reasons-list__number">
-                                        <span>№3</span>
-                                    </div>
-                                    <p>Все достопримечательности находятся очень
-                                       близко</p>
-                                </div>
-                            </section>
-                            <section class="reasons-list__item   reasons-list__item_theme_grey   reasons-list__item_border_bottom">
-                                <div class="reasons-list__text-wrap">
-                                    <h2>Красивая дорога</h2>
-                                    <div class="reasons-list__number">
-                                        <span>№4</span>
-                                    </div>
-                                    <p>Ехать в Седону из Лас-Вегаса совсем не
-                                       скучно!</p>
-                                </div>
-                            </section>
-                            <section class="reasons-list__item   reasons-list__item_theme_grey">
-                                <div class="reasons-list__text-wrap">
-                                    <h2>Мало туристов</h2>
-                                    <div class="reasons-list__number">
-                                        <span>№5</span>
-                                    </div>
-                                    <p>Большинство едет в гранд каньон и толпится
-                                       там</p>
-                                </div>
-                            </section>
+                            <p>Седона не атракцион для туристов, там течет своя
+                               жизнь</p>
                         </div>
-                        <footer class="main-container__footer">
-                            <div class="main-container__footer-text-wrap">
-                                <h2>Заинтересовались?</h2>
-                                <p>Укажите предпологаемые даты поездки и мы покажем
-                                   вам лучшие
-                                   предложения гостиниц в Седоне</p>
+                        <div class="reasons-list__image-wrap">
+                            <picture>
+                                <source media="(min-width: 960px)"
+                                        srcset="assets/images/photo-city-desktop@1x.jpg 1x,
+                                        assets/images/photo-city-desktop@2x.jpg 2x">
+                                <source media="(min-width: 640px)"
+                                        srcset="assets/images/photo-city-tablet@1x.jpg 1x,
+                                        assets/images/photo-city-tablet@2x.jpg 2x">
+                                <img src="assets/images/photo-city-mobile@1x.jpg"
+                                     srcset="assets/images/photo-city-mobile@1x.jpg 1x,
+                                     assets/images/photo-city-mobile@2x.jpg 2x"
+                                     alt="City">
+                            </picture>
+                        </div>
+                    </section>
+                    <section class="features-list">
+                        <div class="features-list__item">
+                            <span class="features-list__icon_house"></span>
+                            <b>Жилье</b>
+                            <p>Рекомендуем пожить в настоящем мотеле, все как в
+                               кино!</p>
+                        </div>
+                        <div class="features-list__item">
+                            <span class="features-list__icon_gift"></span>
+                            <b>Сувениры</b>
+                            <p>Не только китайского, но и местного
+                               производства!</p>
+                        </div>
+                        <div class="features-list__item">
+                            <span class="features-list__icon_burger"></span>
+                            <b>Еда</b>
+                            <p>Всегда заказвайте фирменный бургер, вы не
+                               разочаруетесь!</p>
+                        </div>
+                    </section>
+                    <section class="reasons-list__item reasons-list__item_reverse">
+                        <div class="reasons-list__text-wrap">
+                            <h2>Там есть мост дьявола</h2>
+                            <div class="reasons-list__number">
+                                <span>№2</span>
                             </div>
-                        </footer>
-                    </article>
-                    <div class="footer-wrap base-width">
-                        <section class="hotel-search__form-wrap">
-                            <div class="hotel-search__title">
-                                <h2>Поиск гостиницы в Седоне</h2>
-                            </div>
-                            <form class="hotel-search__form">
-                                <label for="arrival-date">Дата
-                                                          заезда:</label>
-                                <input class="full-width"
-                                       id="arrival-date"
-                                       type="date"
-                                       name="arrival-date"
-                                       required>
-                                <label for="departure-date">Дата
-                                                            выезда:</label>
-                                <input class="full-width"
-                                       id="departure-date"
-                                       type="date"
-                                       name="departure-date"
-                                       required>
-                                <div class="js-inputs-number">
-                                    <div class="half-width">
-                                        <label class="input-label" for="adults">Взрослые:</label>
-                                        <div class="input-number">
-                                            <button class="input-number__inner-btn   js-adults-inc"
-                                                    type="button"
-                                                    data-action="inc"></button>
-                                            <input id="adults"
-                                                   type="number"
-                                                   name="adults"
-                                                   max="999999999"
-                                                   required>
-                                            <button class="input-number__outer-btn   js-adults-dec"
-                                                    type="button"
-                                                    data-action="dec"></button>
-                                        </div>
-                                    </div>
-                                    <div class="half-width">
-                                        <label class="input-label" for="children">Дети:</label>
-                                        <div class="input-number">
-                                            <button class="input-number__inner-btn   js-children-inc"
-                                                    type="button"
-                                                    data-action="inc"></button>
-                                            <input id="children"
-                                                   type="number"
-                                                   name="children"
-                                                   max="999999999"
-                                                   required>
-                                            <button class="input-number__outer-btn   js-children-dec"
-                                                    type="button"
-                                                    data-action="dec"></button>
-                                        </div>
-                                    </div>
+                            <p>Да, по нему можно пройти! Если конечно вы
+                               осмелитесь</p>
+                        </div>
+                        <div class="reasons-list__image-wrap">
+                            <picture>
+                                <source media="(min-width: 960px)"
+                                        srcset="assets/images/photo-bridge-desktop@1x.jpg 1x,
+                                        assets/images/photo-bridge-desktop@2x.jpg 2x">
+                                <source media="(min-width: 640px)"
+                                        srcset="assets/images/photo-bridge-tablet@1x.jpg 1x,
+                                        assets/images/photo-bridge-tablet@2x.jpg 2x">
+                                <img src="assets/images/photo-bridge-mobile@1x.jpg"
+                                     srcset="assets/images/photo-bridge-mobile@1x.jpg 1x,
+                                     assets/images/photo-bridge-mobile@2x.jpg 2x"
+                                     alt="Bridge">
+                            </picture>
+                        </div>
+                    </section>
+                    <div class="reasons-list__other-items-wrap">
+                        <section class="reasons-list__item   reasons-list__item_theme_grey   reasons-list__item_border_bottom">
+                            <div class="reasons-list__text-wrap">
+                                <h2>Небольшая площадь</h2>
+                                <div class="reasons-list__number">
+                                    <span>№3</span>
                                 </div>
-                                <button class="btn hotel-search__btn" type="submit">
-                                    Найти
-                                </button>
-                            </form>
+                                <p>Все достопримечательности находятся очень
+                                   близко</p>
+                            </div>
                         </section>
-                        <footer class="main-footer">
-                            <div class="main-footer__inner">
-                                <p>#visitsedona</p>
-                                <div class="main-footer__social-wrap">
-                                    <a class="btn  btn_social  btn_social_tw"
-                                       href="#"></a>
-                                    <a class="btn  btn_social  btn_social_fb"
-                                       href="#"></a>
-                                    <a class="btn  btn_social  btn_social_yt"
-                                       href="#"></a>
+                        <section class="reasons-list__item   reasons-list__item_theme_grey   reasons-list__item_border_bottom">
+                            <div class="reasons-list__text-wrap">
+                                <h2>Красивая дорога</h2>
+                                <div class="reasons-list__number">
+                                    <span>№4</span>
+                                </div>
+                                <p>Ехать в Седону из Лас-Вегаса совсем не
+                                   скучно!</p>
+                            </div>
+                        </section>
+                        <section class="reasons-list__item   reasons-list__item_theme_grey">
+                            <div class="reasons-list__text-wrap">
+                                <h2>Мало туристов</h2>
+                                <div class="reasons-list__number">
+                                    <span>№5</span>
+                                </div>
+                                <p>Большинство едет в гранд каньон и толпится
+                                   там</p>
+                            </div>
+                        </section>
+                    </div>
+                    <footer class="main-container__footer">
+                        <div class="main-container__footer-text-wrap">
+                            <h2>Заинтересовались?</h2>
+                            <p>Укажите предпологаемые даты поездки и мы покажем
+                               вам лучшие
+                               предложения гостиниц в Седоне</p>
+                        </div>
+                    </footer>
+                </article>
+                <div class="footer-wrap base-width">
+                    <section class="hotel-search__form-wrap">
+                        <div class="hotel-search__title">
+                            <h2>Поиск гостиницы в Седоне</h2>
+                        </div>
+                        <form class="hotel-search__form">
+                            <label for="arrival-date">Дата
+                                                      заезда:</label>
+                            <input class="full-width"
+                                   id="arrival-date"
+                                   type="date"
+                                   name="arrival-date"
+                                   required>
+                            <label for="departure-date">Дата
+                                                        выезда:</label>
+                            <input class="full-width"
+                                   id="departure-date"
+                                   type="date"
+                                   name="departure-date"
+                                   required>
+                            <div class="js-inputs-number">
+                                <div class="half-width">
+                                    <label class="input-label"
+                                           for="adults">Взрослые:</label>
+                                    <div class="input-number">
+                                        <button class="input-number__inner-btn   js-adults-inc"
+                                                type="button"
+                                                data-action="inc"></button>
+                                        <input id="adults"
+                                               type="number"
+                                               name="adults"
+                                               required>
+                                        <button class="input-number__outer-btn   js-adults-dec"
+                                                type="button"
+                                                data-action="dec"></button>
+                                    </div>
+                                </div>
+                                <div class="half-width">
+                                    <label class="input-label"
+                                           for="children">Дети:</label>
+                                    <div class="input-number">
+                                        <button class="input-number__inner-btn   js-children-inc"
+                                                type="button"
+                                                data-action="inc"></button>
+                                        <input id="children"
+                                               type="number"
+                                               name="children"
+                                               max="999999999"
+                                               required>
+                                        <button class="input-number__outer-btn   js-children-dec"
+                                                type="button"
+                                                data-action="dec"></button>
+                                    </div>
                                 </div>
                             </div>
-                        </footer>
-                    </div>
+                            <button class="btn hotel-search__btn" type="submit">
+                                Найти
+                            </button>
+                        </form>
+                    </section>
+                    <footer class="main-footer">
+                        <div class="main-footer__inner">
+                            <p>#visitsedona</p>
+                            <div class="main-footer__social-wrap">
+                                <a class="btn  btn_social  btn_social_tw"
+                                   href="#"></a>
+                                <a class="btn  btn_social  btn_social_fb"
+                                   href="#"></a>
+                                <a class="btn  btn_social  btn_social_yt"
+                                   href="#"></a>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
+                <div class="interactive-map">
+                    <button class="interactive-map__close-btn"
+                            type="button"
+                            data-action="close"></button>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1781323.318394242!2d-112.13829655394296!3d34.60725405529877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1509047712135"
+                            width="600"
+                            height="450"
+                            frameborder="0"
+                            style="border:0"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="overlay"></div>
+            </div>
         </div>
         <script src="js/script.min.js"></script>
     </body>

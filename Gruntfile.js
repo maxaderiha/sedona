@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
         concat: {
             dist: {
-                src: ['src/components/**/*.js', 'src/components/**/**/*.js'],
+                src: ['src/components/**/*.js', 'src/components/**/**/*.js', 'src/*.js'],
                 dest: 'src/js/script.js'
             }
         },
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
                 },
             },
             js: {
-                files: ['src/components/**/*.js', 'src/components/**/**/*.js'],
+                files: ['src/components/**/*.js', 'src/components/**/**/*.js', 'src/*.js'],
                 tasks: ['js'],
                 options: {
                     spawn: false,
