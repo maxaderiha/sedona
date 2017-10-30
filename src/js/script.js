@@ -15,7 +15,7 @@
 
         let self = this;
 
-        elem.addEventListener('click', (event) => {
+        elem.addEventListener('tap', (event) => {
             let target = event.target;
             let action = target.getAttribute('data-action');
             let className;
@@ -107,7 +107,7 @@ function PopupModel(button, elem) {
 
     let self = this;
 
-    button.addEventListener('click', (event) => {
+    button.addEventListener('tap', (event) => {
         event.preventDefault();
         let action = button.getAttribute('data-action');
 

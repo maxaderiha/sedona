@@ -16,13 +16,17 @@ input[type="date"] {
   outline: none;
   background-color: @lite-gray;
 
+  &:hover::before {
+    opacity: 0.9;
+  }
+
   &::before {
     position: absolute;
     bottom: 1px;
     right: 1px;
     width: 40px;
     height: 40px;
-    background:@lite-gray url("../components/input-date/icon-calendar.svg") no-repeat center center;
+    background: @lite-gray url("../components/input-date/icon-calendar.svg") no-repeat center center;
     background-size: 22px auto;
     opacity: 0.3;
     cursor: pointer;
