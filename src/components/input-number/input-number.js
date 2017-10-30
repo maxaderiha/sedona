@@ -15,7 +15,7 @@
 
         let self = this;
 
-        elem.addEventListener('click', (event) => {
+        elem.addEventListener('tap', (event) => {
             let target = event.target;
             let action = target.getAttribute('data-action');
             let className;
